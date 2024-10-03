@@ -1,0 +1,108 @@
+# Ignore Python bytecode and cache directories
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+venv/
+env/
+*.venv
+venv*
+env.*
+
+# Ignore virtual environment files
+Pipfile
+Pipfile.lock
+poetry.lock
+*.env
+*.venv
+*.envrc
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore Python-specific development files
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.spec
+
+# Ignore Secret files (credentials, config, etc.)
+secrets/
+*.secrets
+.env
+.env.*
+config/
+config.json
+*.key
+*.pem
+*.crt
+*.p12
+*.token
+
+# Ignore Machine Learning experiment files
+mlruns/
+*.h5
+*.ckpt
+*.pb
+*.tflite
+*.pt
+*.onnx
+*.pkl
+*.joblib
+*.model
+
+# Ignore GCP-specific files
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+*.json  # Include specific GCP credential JSON files
+terraform/
+.gcloud/
+.cloudshell/
+cloudfunctions/
+
+# Ignore general OS files
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore output and build files
+output/
+*.out
+*.log
+*.tmp
+logs/
+
+# Ignore Data and datasets
+*.csv
+*.tsv
+*.parquet
+*.zip
+*.tar.gz
+*.hdf5
+*.pickle
+data/
+
+# Ignore version control directories
+.git/
+.hg/
+.svn/
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore miscellaneous files
+*.bak
+*.swp
+*~
+
