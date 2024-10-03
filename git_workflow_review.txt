@@ -1,0 +1,109 @@
+
+=== Recent Commits ===
+* d5d21a5 (HEAD -> feature/environment_detection, tag: v1.0-feature-environment, origin/feature/environment_detection) Refactor auto_test_generator.py for robustness and template imports
+* b95e6c3 (origin/develop, feature/basic_structure, develop) feat: Implement basic project structure
+* 81ee501 (origin/feature/dev-env-setup, feature/dev-env-setup) feat: baseline dev tools functional
+* 030cda7 feat: dev env setup and autonmation scripts
+* 7f7c191 (origin/main, main) feat: Initialize project structure
+
+=== Files Changed in Recent Commits ===
+commit d5d21a56ad0e4cc516437d0c361db624ae3b555f
+Author: itrauco <chris@trau.co>
+Date:   Wed Oct 2 21:46:24 2024 -0400
+
+    Refactor auto_test_generator.py for robustness and template imports
+
+A	.pytest.ini
+M	README.md
+A	bigquery_setup/bigquery_setup/auth/environment.py
+A	dev_tools/auto_test_generator.py
+D	dev_tools/auto_test_runner.py
+A	dev_tools/templates/___init__.py
+A	dev_tools/templates/test_template.py
+M	tests/__init__.py
+A	tests/bigquery_setup/auth/environment_test.py
+A	utils/my_watchdog.py
+
+commit b95e6c39ce335c004f6c606ac5cf6890fc0b5d2d
+Author: itrauco <chris@trau.co>
+Date:   Wed Oct 2 20:35:36 2024 -0400
+
+    feat: Implement basic project structure
+
+M	__init__.py
+A	examples/__init__.py
+A	examples/usage.py
+M	requirements.txt
+M	setup.py
+M	tests/__init__.py
+
+commit 81ee501820a52ee14a2360caaee704b18ed55164
+Author: itrauco <chris@trau.co>
+Date:   Wed Oct 2 20:21:06 2024 -0400
+
+    feat: baseline dev tools functional
+
+R100	auto_test_runner.py	dev_tools/auto_test_runner.py
+R100	dependency_checker.py	dev_tools/dependency_checker.py
+
+commit 030cda74bfc3677d77532bac1e4811452589cd9c
+Author: itrauco <chris@trau.co>
+Date:   Wed Oct 2 20:17:39 2024 -0400
+
+    feat: dev env setup and autonmation scripts
+
+A	.gitignore
+A	auto_test_runner.py
+A	dependency_checker.py
+A	dev_tools/auto_formatter.py
+A	dev_tools/auto_init_creator.py
+
+commit 7f7c191046c92cdb5070444946ab0217a001e6b7
+Author: itrauco <chris@trau.co>
+Date:   Wed Oct 2 20:06:51 2024 -0400
+
+    feat: Initialize project structure
+
+A	README.md
+A	__init__.py
+A	requirements.txt
+A	setup.py
+A	tests/__init__.py
+
+=== All Branches ===
+  develop                       b95e6c3 feat: Implement basic project structure
+  feature/basic_structure       b95e6c3 feat: Implement basic project structure
+  feature/dev-env-setup         81ee501 [origin/feature/dev-env-setup] feat: baseline dev tools functional
+* feature/environment_detection d5d21a5 Refactor auto_test_generator.py for robustness and template imports
+  main                          7f7c191 [origin/main] feat: Initialize project structure
+
+=== Current Branch Status ===
+On branch feature/environment_detection
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   tests/bigquery_setup/auth/environment_test.py
+	deleted:    utils/my_watchdog.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	config.py
+	git_workflow_review.txt
+	h
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+=== Commit History Compared to Develop ===
+d5d21a5 Refactor auto_test_generator.py for robustness and template imports
+
+=== Files Changed Compared to Develop ===
+ .pytest.ini                                       |  8 +++
+ README.md                                         |  6 ++
+ bigquery_setup/bigquery_setup/auth/environment.py | 23 +++++++
+ dev_tools/auto_test_generator.py                  | 87 +++++++++++++++++++++++++
+ dev_tools/auto_test_runner.py                     | 28 --------
+ dev_tools/templates/___init__.py                  |  0
+ dev_tools/templates/test_template.py              | 17 +++++
+ tests/__init__.py                                 |  5 ++
+ tests/bigquery_setup/auth/environment_test.py     | 15 +++++
+ 9 files changed, 161 insertions(+), 28 deletions(-)

@@ -1,12 +1,11 @@
-import pytest
 
+import pytest
 
 def test_imports():
     try:
         import auth.environment
     except ImportError:
         pytest.fail("Failed to import auth.environment")
-
 
 def test_functions():
     # Add tests for functions in the auth.environment module
